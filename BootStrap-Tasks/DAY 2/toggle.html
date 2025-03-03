@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Persons In My Life</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-header {
+            background-color: white;
+            border-bottom: none;
+            padding: 1rem;
+        }
+        .card {
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #dc3545;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .person-details {
+            padding: 1rem;
+            background-color: #f8f9fa;
+        }
+        .detail-label {
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="title">Sweet Persons In My Life ❤️</h1>
+        
+        <div class="accordion" id="sweetPersons">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link w-100 text-start text-decoration-none text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#RokaDetails">
+                        Rokiaa (Roka)
+                    </button>
+                </div>
+                <div id="RokaDetails" class="collapse" data-bs-parent="#sweetPersons">
+                    <div class="person-details">
+                        <p><span class="detail-label">Name:</span>Rokiaa (Roka)</p>
+                        <p><span class="detail-label">Age:</span>7</p>
+                        <p><span class="detail-label">Job:</span>Student</p>
+                        <p><span class="detail-label">Gender:</span>Female</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link w-100 text-start text-decoration-none text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mamaDetails">
+                        Mama
+                    </button>
+                </div>
+                <div id="mamaDetails" class="collapse" data-bs-parent="#sweetPersons">
+                    <div class="person-details">
+                        <p><span class="detail-label">Name:</span>Mama</p>
+                        <p><span class="detail-label">Age:</span>60</p>
+                        <p><span class="detail-label">Job:</span>Retired</p>
+                        <p><span class="detail-label">Gender:</span>Female</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link w-100 text-start text-decoration-none text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#babaDetails">
+                        Baba
+                    </button>
+                </div>
+                <div id="babaDetails" class="collapse" data-bs-parent="#sweetPersons">
+                    <div class="person-details">
+                        <p><span class="detail-label">Name:</span> Baba</p>
+                        <p><span class="detail-label">Age:</span>62</p>
+                        <p><span class="detail-label">Job:</span>CEO</p>
+                        <p><span class="detail-label">Gender:</span>Male</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
